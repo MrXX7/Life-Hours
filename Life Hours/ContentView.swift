@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var dateOfBirth: Date = Date()
+    @State private var lifeExpectancy: Int = 692040
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Form {
+            DatePicker("Date of Birth", selection: $dateOfBirth,
+                       displayedComponents: .date)
+            Text("Hours of life left: \(hoursLeft())")
         }
-        .padding()
     }
+    func hoursLeft() -> Int {
+            let currentDate = Date()
+            let calendar = Calendar.current
+            let ageComponents = calendar.dateComponents([.year], from: dateOfBirth, to: currentDate)
+            let ageInYears = ageComponents.year!
+            let hoursLived = ageInYears * 8760
+            return lifeExpectancy - hoursLived
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
