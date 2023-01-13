@@ -24,7 +24,6 @@ struct RegisterView: View {
     }
     
     func register() {
-        // perform registration logic here
     }
 }
 
