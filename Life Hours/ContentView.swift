@@ -10,25 +10,28 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var addBirthday: String = ""
-    @State private var dateOfBirth: Date = Date()
+    @State private var dateOfBirth: String = ""
     @State private var lifeExpectancy: Int = 692040
     
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Add your Birthday", text: $addBirthday)
-                Button("Register") {
-                    
-                }.font(.title)
-                    .foregroundColor(.black)
-                    .background(Color.white)
-                .cornerRadius(5)
+                    HStack {
+                        TextField("Add your Birthday..", text: $addBirthday)
+                        Button("Add") {
+                            dateOfBirth.append(addBirthday)
+                            addBirthday = ""
+                        }.buttonStyle(.borderedProminent)
+                            .foregroundColor(.white)
+                    } .textFieldStyle(.roundedBorder)
+                        .navigationTitle("Birthday")
+                
+                    Text ("Your Birthday: \(dateOfBirth)")
+                    Spacer()
+                }
                 .padding()
-                Spacer()
-            } .textFieldStyle(.roundedBorder)
-                .background(Color.orange)
-            .navigationTitle("Birthday")
-        }.padding()
+            }
+        
     }
 }
 
