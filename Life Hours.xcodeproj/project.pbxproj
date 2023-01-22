@@ -11,7 +11,6 @@
 		AD5673BA296BDCC200C3709F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5673B9296BDCC200C3709F /* ContentView.swift */; };
 		AD5673BC296BDCC400C3709F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5673BB296BDCC400C3709F /* Assets.xcassets */; };
 		AD5673BF296BDCC400C3709F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5673BE296BDCC400C3709F /* Preview Assets.xcassets */; };
-		ADA4E68F296C1AE200934908 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4E68E296C1AE200934908 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		AD5673B9296BDCC200C3709F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD5673BB296BDCC400C3709F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5673BE296BDCC400C3709F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ADA4E68E296C1AE200934908 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 			children = (
 				AD5673B7296BDCC200C3709F /* Life_HoursApp.swift */,
 				AD5673B9296BDCC200C3709F /* ContentView.swift */,
-				ADA4E68E296C1AE200934908 /* RegisterView.swift */,
 				AD5673BB296BDCC400C3709F /* Assets.xcassets */,
 				AD5673BD296BDCC400C3709F /* Preview Content */,
 			);
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA4E68F296C1AE200934908 /* RegisterView.swift in Sources */,
 				AD5673BA296BDCC200C3709F /* ContentView.swift in Sources */,
 				AD5673B8296BDCC200C3709F /* Life_HoursApp.swift in Sources */,
 			);

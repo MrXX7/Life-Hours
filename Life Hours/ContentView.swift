@@ -4,37 +4,33 @@
 //
 //  Created by Oncu Can on 9.01.2023.
 //
-
 import SwiftUI
 
 struct ContentView: View {
     
-    @State private var addBirthday: String = ""
-    @State private var dateOfBirth: String = ""
-    @State private var lifeExpectancy: Int = 692040
+    static let lifeHours = 692040
+    static let lifeDays = lifeHours / 24
+    static let lifeMonths = lifeDays / 30
+    static let lifeYears = lifeDays / 365
+    
+    @State var addBirthday: String = ""
     
     var body: some View {
         NavigationView {
-            VStack {
-                    HStack {
-                        TextField("Add your Birthday..", text: $addBirthday)
-                        Button("Add") {
-                            dateOfBirth.append(addBirthday)
-                            addBirthday = ""
-                        }.buttonStyle(.borderedProminent)
-                            .foregroundColor(.white)
-                    } .textFieldStyle(.roundedBorder)
-                        .navigationTitle("Birthday")
+            VStack (alignment: .leading){
+                Text("Days: \(ContentView.lifeDays)")
+                Text("Months: \(ContentView.lifeMonths)")
+                Text("Years: \(ContentView.lifeYears)")
                 
-                    Text ("Your Birthday: \(dateOfBirth)")
-                    Spacer()
-                }
+                TextField("Add Birthday", text: $addBirthday)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Spacer()
+            } .font(.largeTitle)
+                .navigationTitle("Human Life")
                 .padding()
-            }
-        
+        }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
