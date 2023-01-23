@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD1377FD297DC7480075D592 /* tryview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1377FC297DC7480075D592 /* tryview.swift */; };
 		AD5673B8296BDCC200C3709F /* Life_HoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5673B7296BDCC200C3709F /* Life_HoursApp.swift */; };
 		AD5673BA296BDCC200C3709F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5673B9296BDCC200C3709F /* ContentView.swift */; };
 		AD5673BC296BDCC400C3709F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5673BB296BDCC400C3709F /* Assets.xcassets */; };
 		AD5673BF296BDCC400C3709F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5673BE296BDCC400C3709F /* Preview Assets.xcassets */; };
+		AD7152D2297E1128000625CC /* LifeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7152D1297E1128000625CC /* LifeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD1377FC297DC7480075D592 /* tryview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tryview.swift; sourceTree = "<group>"; };
 		AD5673B4296BDCC200C3709F /* Life Hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Hours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5673B7296BDCC200C3709F /* Life_HoursApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life_HoursApp.swift; sourceTree = "<group>"; };
 		AD5673B9296BDCC200C3709F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD5673BB296BDCC400C3709F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5673BE296BDCC400C3709F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD7152D1297E1128000625CC /* LifeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				AD5673B7296BDCC200C3709F /* Life_HoursApp.swift */,
 				AD5673B9296BDCC200C3709F /* ContentView.swift */,
-				AD1377FC297DC7480075D592 /* tryview.swift */,
+				AD7152D1297E1128000625CC /* LifeCard.swift */,
 				AD5673BB296BDCC400C3709F /* Assets.xcassets */,
 				AD5673BD296BDCC400C3709F /* Preview Content */,
 			);
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5673BA296BDCC200C3709F /* ContentView.swift in Sources */,
-				AD1377FD297DC7480075D592 /* tryview.swift in Sources */,
+				AD7152D2297E1128000625CC /* LifeCard.swift in Sources */,
 				AD5673B8296BDCC200C3709F /* Life_HoursApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
